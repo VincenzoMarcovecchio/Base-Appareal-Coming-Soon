@@ -11,13 +11,16 @@
 }
 
 .hero-section {
+  display: -webkit-box;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
   position: relative;
   font-family: "Josefin Sans", sans-serif;
   width: 100%;
   font-size: 16px;
-  background: url(images/bg-pattern-desktop.svg);
+  background: url(/bg-pattern-desktop.2f784f63.svg);
   background-position: top left;
   background-size: contain;
   background-repeat: no-repeat;
@@ -31,14 +34,18 @@
 }
 
 .hero-text {
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
   margin: 4rem 0 2rem 10%;
-  order: 1;
+  -webkit-box-ordinal-group: 2;
+          order: 1;
   width: 60%;
 }
 .hero-image {
   width: 43%;
-  order: 2;
+  -webkit-box-ordinal-group: 3;
+          order: 2;
 }
 .hero-image-mobile {
   display: none;
@@ -77,14 +84,17 @@ p {
   top: 0.5rem;
   opacity: 0.5;
   visibility: hidden;
+  -webkit-transition: all 100ms ease-in-out;
   transition: all 100ms ease-in-out;
 }
 form {
+  display: -webkit-box;
   display: flex;
   position: relative;
   margin-top: 3rem;
   width: 70%;
   align-content: center;
+  -webkit-transition: all 500ms ease-in-out;
   transition: all 500ms ease-in-out;
 }
 
@@ -95,6 +105,22 @@ input {
   border-radius: 35px;
   border: 1px solid var(--desaturatedRed);
   outline: none;
+}
+input::-webkit-input-placeholder {
+  color: var(--desaturatedRed);
+  font-size: 12px;
+}
+input::-moz-placeholder {
+  color: var(--desaturatedRed);
+  font-size: 12px;
+}
+input:-ms-input-placeholder {
+  color: var(--desaturatedRed);
+  font-size: 12px;
+}
+input::-ms-input-placeholder {
+  color: var(--desaturatedRed);
+  font-size: 12px;
 }
 input::placeholder {
   color: var(--desaturatedRed);
@@ -126,12 +152,15 @@ button:hover {
 }
 @media screen and (max-width: 750px) {
   main.hero-section {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
     background-size: cover;
   }
 
   .hero-text {
-    order: 2;
+    -webkit-box-ordinal-group: 3;
+            order: 2;
   }
   .hero-image {
     display: none;
@@ -156,7 +185,8 @@ button:hover {
     width: 80%;
     margin: 4rem auto;
     text-align: center;
-    justify-content: center;
+    -webkit-box-pack: center;
+            justify-content: center;
     justify-items: center;
   }
 
@@ -179,7 +209,8 @@ button:hover {
   }
   form {
     width: 100%;
-    justify-content: center;
+    -webkit-box-pack: center;
+            justify-content: center;
     margin-top: 3rem;
   }
 
@@ -203,3 +234,6 @@ button:hover {
     width: 100%;
   }
 }
+
+
+/*# sourceMappingURL=/style.e308ff8e.css.map */
