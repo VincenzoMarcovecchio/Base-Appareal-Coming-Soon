@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Frontend Mentor | Base Apparel coming soon page</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main class="hero-section">
+      <div class="hero-text">
+        <img src="images/logo.svg" alt="logo" class="logo" />
+        <h1>
+          <span> We're </span>
+          coming soon
+        </h1>
+        <p>
+          Hello fellow shoppers! We're currently building our new fashion store.
+          Add your email below to stay up-to-date with announcements and our
+          launch deals.
+        </p>
+        <form action="#">
+          <input
+            type="email"
+            id="email"
+            aria-label="Email address"
+            title="email"
+            placeholder="Enter your e-mail"
+            name="email"
+            onfocus="focusFunction()"
+          />
+
+          <i
+            ><img
+              src="images/icon-error.svg"
+              alt="icon-error"
+              class="icon-error"
+          /></i>
+
+          <button onclick="validateInput()">
+            <img src="images/icon-arrow.svg" alt="icon-arrow" />
+          </button>
+        </form>
+        <p class="error-message">
+          Please provide a valid email
+        </p>
+      </div>
+      <img
+        src="images/hero-desktop.jpg"
+        alt="hero-image-desktop"
+        class="hero-image"
+      />
+      <img
+        src="images/hero-mobile.jpg"
+        alt="hero-mobile-image"
+        class="hero-image-mobile"
+      />
+    </main>
+
+    <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://github.com/VincenzoMarcovecchio" target="_blank"
+          >Vinny</a
+        >.
+      </p>
+      <script>
+        function validateInput() {
+          var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+          const email = document.getElementsByName("email");
+          const icon = document.getElementsByClassName("icon-error");
+          const err = document.getElementsByClassName("error-message");
+
+          if (email[0].value.lenght < 1 || !email[0].value.match(mailformat)) {
+            console.log("notValid email address");
+            email[0].style.border = "1px solid hsl(354, 100%, 66%)";
+            err[0].style.visibility = "visible";
+            icon[0].style.visibility = "visible";
+          } else {
+            email[0].style.border = "Inherit";
+            err[0].style.visibility = "hidden";
+            icon[0].style.visibility = "hidden";
+          }
+        }
+
+        function focusFunction() {
+          email[0].style.border = "inherit";
+          err[0].style.visibility = "hidden";
+          icon[0].style.visibility = "hidden";
+        }
+      </script>
+      <script src="index.js"></script>
+    </footer>
+  </body>
+</html>
