@@ -24,7 +24,7 @@
 }
 
 .logo {
-  width: 130px;
+  width: 150px;
   height: 40px;
   margin-bottom: 6rem;
   display: block;
@@ -74,7 +74,7 @@ p {
 .icon-error {
   position: absolute;
   right: 26%;
-  top: 0.5rem;
+  top: 0.8rem;
   opacity: 0.5;
   visibility: hidden;
   transition: all 100ms ease-in-out;
@@ -193,7 +193,7 @@ button:hover {
   .icon-error {
     position: absolute;
     right: 31%;
-    top: 0.5rem;
+    top: 0.8rem;
   }
 }
 
