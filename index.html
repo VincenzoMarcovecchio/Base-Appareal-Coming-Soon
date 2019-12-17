@@ -1,1 +1,86 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600&display=swap" rel="stylesheet"><link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.b532600b.png"><link rel="stylesheet" href="style.4aa56852.css"><title>Frontend Mentor | Base Apparel coming soon page</title><style>.attribution{font-size:11px;text-align:center}.attribution a{color:#3e52a3}</style><link rel="stylesheet" href="base-apparel-coming-soon-master.4aa56852.css"></head><body> <main class="hero-section"> <div class="hero-text"> <img src="logo.e9020f4d.svg" alt="logo" class="logo"> <h1> <span> We're </span> coming soon </h1> <p> Hello fellow shoppers! We're currently building our new fashion store. Add your email below to stay up-to-date with announcements and our launch deals. </p> <form action="#"> <input type="email" id="email" aria-label="Email address" title="email" placeholder="Enter your e-mail" name="email" onfocus="focusFunction()"> <i><img src="icon-error.1edeb4aa.svg" alt="icon-error" class="icon-error"></i> <button onclick="validateInput()"> <img src="icon-arrow.68b25e3d.svg" alt="icon-arrow"> </button> </form> <p class="error-message"> Please provide a valid email </p> </div> <img src="hero-desktop.97cfa8fb.jpg" alt="hero-image-desktop" class="hero-image"> <img src="hero-mobile.06b399ed.jpg" alt="hero-mobile-image" class="hero-image-mobile"> </main> <footer> <p class="attribution"> Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="https://github.com/VincenzoMarcovecchio" target="_blank">Vinny</a>. </p> <script>function e(){var e=document.getElementsByName("email"),i=document.getElementsByClassName("icon-error"),l=document.getElementsByClassName("error-message");e[0].value.lenght<1||!e[0].value.match(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/)?(console.log("notValid email address"),e[0].style.border="1px solid hsl(354, 100%, 66%)",l[0].style.visibility="visible",i[0].style.visibility="visible"):(e[0].style.border="Inherit",l[0].style.visibility="hidden",i[0].style.visibility="hidden")}function i(){email[0].style.border="inherit",err[0].style.visibility="hidden",icon[0].style.visibility="hidden"}</script> <script src="base-apparel-coming-soon-master.95a637f9.js"></script> </footer> </body></html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.a89af6ed.png">
+
+    <link rel="stylesheet" href="/style.e308ff8e.css">
+
+    <title>Frontend Mentor | Base Apparel coming soon page</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>.attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }</style>
+  <script src="/style.e308ff8e.js"></script><link rel="stylesheet" href="/base-apparel-coming-soon-master.e31bb0bc.css"></head>
+  <body>
+    <main class="hero-section">
+      <div class="hero-text">
+        <img src="/logo.236e4034.svg" alt="logo" class="logo">
+        <h1>
+          <span> We're </span>
+          coming soon
+        </h1>
+        <p>
+          Hello fellow shoppers! We're currently building our new fashion store.
+          Add your email below to stay up-to-date with announcements and our
+          launch deals.
+        </p>
+        <form action="#">
+          <input type="email" id="email" aria-label="Email address" title="email" placeholder="Email Address" name="email" onfocus="focusFunction()">
+
+          <i><img src="/icon-error.7540ea9a.svg" alt="icon-error" class="icon-error"></i>
+
+          <button onclick="validateInput()">
+            <img src="/icon-arrow.56d7c493.svg" alt="icon-arrow">
+          </button>
+        </form>
+        <p class="error-message">
+          Please provide a valid email
+        </p>
+      </div>
+      <img src="/hero-desktop.01ed746a.jpg" alt="hero-image-desktop" class="hero-image">
+      <img src="/hero-mobile.526d61cc.jpg" alt="hero-mobile-image" class="hero-image-mobile">
+    </main>
+
+    <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by
+        <a href="https://github.com/VincenzoMarcovecchio" target="_blank">Vinny</a>.
+      </p>
+      <script>function validateInput() {
+  var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+  var email = document.getElementsByName("email");
+  var icon = document.getElementsByClassName("icon-error");
+  var err = document.getElementsByClassName("error-message");
+
+  if (email[0].value.lenght < 1 || !email[0].value.match(mailformat)) {
+    console.log("notValid email address");
+    email[0].style.border = "1px solid hsl(354, 100%, 66%)";
+    err[0].style.visibility = "visible";
+    icon[0].style.visibility = "visible";
+  } else {
+    email[0].style.border = "Inherit";
+    err[0].style.visibility = "hidden";
+    icon[0].style.visibility = "hidden";
+  }
+}
+
+function focusFunction() {
+  email[0].style.border = "inherit";
+  err[0].style.visibility = "hidden";
+  icon[0].style.visibility = "hidden";
+}</script>
+      <script src="/base-apparel-coming-soon-master.e31bb0bc.js"></script>
+    </footer>
+  </body>
+</html>
