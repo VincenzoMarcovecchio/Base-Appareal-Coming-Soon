@@ -116,8 +116,19 @@ input {
   height: 50px;
   padding: 20px;
   border-radius: 35px;
-  border: 1px solid #f2ecec;
+  border: 2px solid #f2ecec;
   outline: none;
+  background: -webkit-gradient(
+    linear,
+    left top, right top,
+    from(rgba(254, 250, 249, 1)),
+    to(rgba(255, 247, 248, 1))
+  );
+  background: linear-gradient(
+    90deg,
+    rgba(254, 250, 249, 1) 0%,
+    rgba(255, 247, 248, 1) 100%
+  );
 }
 input::-webkit-input-placeholder {
   color: var(--desaturatedRed);
@@ -141,7 +152,7 @@ input::placeholder {
 }
 
 button {
-  width: 85px;
+  width: 90px;
   position: absolute;
   right: 0;
   height: 50px;
