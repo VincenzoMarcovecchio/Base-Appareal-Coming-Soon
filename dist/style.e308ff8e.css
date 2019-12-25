@@ -3,6 +3,19 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  background: -webkit-gradient(
+    linear,
+    left top, right top,
+    from(rgba(254, 250, 249, 1)),
+    to(rgba(255, 247, 248, 1))
+  );
+  background: linear-gradient(
+    90deg,
+    rgba(254, 250, 249, 1) 0%,
+    rgba(255, 247, 248, 1) 100%
+  );
+}
 
 :root {
   --desaturatedRed: hsl(0, 36%, 70%);
@@ -29,7 +42,7 @@
 .logo {
   width: 150px;
   height: 40px;
-  margin-bottom: 6rem;
+  margin-bottom: 5.5rem;
   display: block;
 }
 
@@ -103,7 +116,7 @@ input {
   height: 50px;
   padding: 20px;
   border-radius: 35px;
-  border: 1px solid var(--desaturatedRed);
+  border: 1px solid #f2ecec;
   outline: none;
 }
 input::-webkit-input-placeholder {
@@ -128,7 +141,7 @@ input::placeholder {
 }
 
 button {
-  width: 25%;
+  width: 85px;
   position: absolute;
   right: 0;
   height: 50px;
@@ -219,7 +232,7 @@ button:hover {
   }
 
   button {
-    width: 30%;
+    width: 80px;
   }
   .icon-error {
     position: absolute;
