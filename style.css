@@ -109,6 +109,7 @@ input {
     rgba(254, 250, 249, 1) 0%,
     rgba(255, 247, 248, 1) 100%
   );
+  font-size:1rem
 }
 input::placeholder {
   color: var(--desaturatedRed);
