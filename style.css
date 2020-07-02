@@ -68,7 +68,7 @@ span {
 
 p {
   margin-top: 2rem;
-  width: 70%;
+  max-width: 60%;
   line-height: 1.8;
   color: var(--desaturatedRed);
 }
@@ -81,7 +81,7 @@ p {
 
 .icon-error {
   position: absolute;
-  right: 26%;
+  right: calc(0% + 110px);
   top: 0.8rem;
   opacity: 0.5;
   visibility: hidden;
@@ -91,7 +91,8 @@ form {
   display: flex;
   position: relative;
   margin-top: 3rem;
-  width: 70%;
+  max-width: 70%;
+  max-width:400px;
   align-content: center;
   transition: all 500ms ease-in-out;
 }
@@ -156,7 +157,7 @@ button:hover {
 
   .logo {
     position: absolute;
-    width: 110px;
+    width: 130px;
     height: 35px;
     top: 3rem;
     left: 2rem;
@@ -167,8 +168,9 @@ button:hover {
     width: 80%;
     margin: 4rem auto;
     text-align: center;
+    display:flex;
     justify-content: center;
-    justify-items: center;
+    align-items:center;
   }
 
   h1 {
@@ -178,6 +180,7 @@ button:hover {
   }
 
   p {
+    max-width:none;
     width: 100%;
     text-align: center;
   }
@@ -189,6 +192,7 @@ button:hover {
     text-align: left;
   }
   form {
+    max-width:none;
     width: 100%;
     justify-content: center;
     margin-top: 3rem;
