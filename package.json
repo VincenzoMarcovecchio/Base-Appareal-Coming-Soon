@@ -10,7 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "autoprefixer": "^9.7.3",
-    "postcss-modules": "^1.4.1"
+    "postcss-modules": "^6.0.0"
   },
   "devDependencies": {
     "cssnano": "^4.1.10"
